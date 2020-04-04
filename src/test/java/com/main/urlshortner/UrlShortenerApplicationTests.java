@@ -1,4 +1,4 @@
-package com.nanami.urlshortner;
+package com.main.urlshortner;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
