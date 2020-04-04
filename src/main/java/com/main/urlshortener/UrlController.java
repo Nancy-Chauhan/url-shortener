@@ -1,4 +1,4 @@
-package com.nanami.urlshortener;
+package com.main.urlshortener;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

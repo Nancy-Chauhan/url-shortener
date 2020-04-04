@@ -1,4 +1,4 @@
-package com.nanami.urlshortener;
+package com.main.urlshortener;
 
 public class ShortenedUrl {
     private final String shortenedUrl;

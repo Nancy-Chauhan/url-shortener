@@ -1,4 +1,4 @@
-package com.nanami.urlshortener;
+package com.main.urlshortener;
 
 import org.hashids.Hashids;
 import org.springframework.beans.factory.annotation.Autowired;

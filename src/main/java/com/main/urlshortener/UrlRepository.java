@@ -1,4 +1,4 @@
-package com.nanami.urlshortener;
+package com.main.urlshortener;
 
 import org.springframework.data.repository.CrudRepository;
 
