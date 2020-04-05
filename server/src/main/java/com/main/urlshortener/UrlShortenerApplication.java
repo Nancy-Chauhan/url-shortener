@@ -4,6 +4,9 @@ import org.hashids.Hashids;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 
 @SpringBootApplication
@@ -17,5 +20,4 @@ public class UrlShortenerApplication {
     public Hashids hashids() {
         return new Hashids("this is my salt");
     }
-
 }
