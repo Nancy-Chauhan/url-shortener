@@ -18,7 +18,7 @@ class App extends React.Component {
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(this.state.url)
+      body: this.state.url
     };
     fetch('http://localhost:8080/shorten', requestOptions)
       .then(response => response.json())
