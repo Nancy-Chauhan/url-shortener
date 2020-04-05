@@ -36,14 +36,19 @@ class App extends React.Component {
       <div className="App">
         <main>
           <form onSubmit={this.handleSubmit}>
+            <div>
+              <img className="logo" src={logo} alt="logo" />
+            </div>
             <div class="wrapper">
-              <input className="urlbox" id="url" type="url" placeholder="Paste Url here" value={url} onChange={this.handleChange} />
-              <input class="submit" type="submit" value="Submit" />
+              <input className="urlbox" id="url" type="url" placeholder="Paste URL here" value={url} onChange={this.handleChange} />
+              <button className="submit" type="submit">Submit</button>
             </div>
           </form>
           {shortenedUrl && (<p className="shortenedurl">
-            <a href={`http://localhost:8080/redirect/${shortenedUrl}`} target="_blank">http://localhost:8080/redirect/{shortenedUrl}</a>
-            <button onClick={this.copyUrlToClipboard} class="copy" type="button">Copy</button>  
+            <a href={`http://localhost:8080/redirect/${shortenedUrl}`} target="_blank" rel="noopener noreferrer">
+              http://localhost:8080/redirect/{shortenedUrl}
+            </a>
+            <button onClick={this.copyUrlToClipboard} class="copy" type="button">Copy</button>
           </p>)}
         </main>
       </div>

@@ -1,55 +1,65 @@
 main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
 }
 
 .App {
-  height: 100%;
+    height: 100%;
 }
 
 input {
-	box-sizing: border-box;
-	font-size: 13px;
-	vertical-align: top;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+form {
+    max-width: 620px;
+    width: 100%;
 }
 
 .wrapper {
-	text-align: center;
-	position: relative;
-	height: 44px;
-	font-size: 0;
-	top: 50%;
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .78);
-  border-radius: 20px;
-  display:flex;
+    text-align: center;
+    position: relative;
+    height: 44px;
+    font-size: 0;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .78);
+    border-radius: 20px;
+    display: flex;
+    margin: 0 4rem;
 }
 
 .urlbox {
-  outline: none;
-	padding: 0 30px;
-	font-size: 18px;
-	max-width: 400px;
-	height: 44px;
-	border: none;
-	border-radius: 20px 0 0 20px;
+    outline: none;
+    padding: 0 30px;
+    font-size: 18px;
+    height: 44px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    flex-grow: 1;
 }
 
 .submit {
-  outline: none;
-	cursor: pointer;
-	border: none;
-	background: #1E1E20;
-	border-radius: 0 20px 20px 0;
-	padding: 15px 25px;
-	display: inline-block;
-	width: 150px;
-  height: 44px;
-  color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: #1E1E20;
+    border-radius: 0 20px 20px 0;
+    padding: 0px 30px;
+    display: inline-block;
+    width: 150px;
+    color: white;
 }
 
 .shortenedurl {
-  margin-top: 40px;
+    margin-top: 40px;
+}
+
+.logo {
+    display: block;
+    margin: auto;
 }
